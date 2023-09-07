@@ -57,19 +57,21 @@ const Skills = () => {
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}
                       className="app__skills-exp-work"
-                      data-tip
                       data-for={work.name}
+                      data-tip={work.name}
+                      data-tooltip-variant='success'
                       key={work.name}>
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
                     </motion.div>
-                    <ReactTooltip
+                    {/* <ReactTooltip
                       id={work.name}
                       effect="solid"
-                      arrowColor="#fff"
+                       
+                      arrowColor=""
                       className="skills-tooltip">
                       {work.desc}
-                    </ReactTooltip>
+                    </ReactTooltip> */}
                   </>
                 ))}
               </motion.div>

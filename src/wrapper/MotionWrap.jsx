@@ -10,7 +10,7 @@ const MotionWrap = (Component, classNames) => function HOC() {
             { duration: 0.5 }
         }
         className = { `${classNames} app__flex` } >
-        <Component />
+            <Component />
         </motion.div>
     );
 };

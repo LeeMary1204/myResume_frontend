@@ -7,7 +7,7 @@ import './Footer.scss';
 
 
 const Footer = () => {
-    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [formData, setFormData] = useState({ username: '', email: '', message: '' });
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
     const [loading, setLoading] = useState(false);
 
@@ -42,11 +42,11 @@ const Footer = () => {
             <div className="app__footer-cards">
                 <div className="app__footer-card ">
                     <img src={images.email} alt="email" />
-                    <a href="gaoxianglyu@gmail.com" className="p-text">gaoxianglyu@gmail.com</a>
+                    <a href="javascript:void(0);" className="p-text">Solely.world@gmail.com</a>
                 </div>
                 <div className="app__footer-card">
                     <img src={images.mobile} alt="phone" />
-                    <a href="tel:+1 (929)398-9768" className="p-text">+1 (929)398-9768</a>
+                    <a href="javascript:void(0);" className="p-text">+x (xxx)xxx-xxxx</a>
                 </div>
             </div>
             {!isFormSubmitted ? (
